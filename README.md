@@ -233,7 +233,22 @@ augment its understanding of the question and extend the context window.
 <details>
 <summary>Click to see the solution/steps 👀</summary>
 
-Information...
+Let's amend the prompt to include the results of our query:
+
+```js
+let conversation = [
+  {
+    role: 'system',
+    content: `You are a helpful real estate assistant. You must use these houses and only these houses to determine the single house that is best for the user based on their query. Provide your reasoning in a friendly way. Additionally, provide some information about the size, price, and location of the house. Here is their query: ${makePrompt(
+      embeddings
+    )})}`,
+  },
+];
+```
+
+We're passing the `makePrompt` function the `embeddings` array, which contains the results of our query. This function
+will return a string that's the combined results of our query. We'll use this string to augment the context window of
+the AI.
 
 </details>
 
