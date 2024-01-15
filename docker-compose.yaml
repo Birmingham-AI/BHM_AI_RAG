@@ -37,6 +37,7 @@ services:
     container_name: server
     volumes:
       - ./server:/server
+      - /server/node_modules
     ports:
       - '3000:3000'
     env_file:
