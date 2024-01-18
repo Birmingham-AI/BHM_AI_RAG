@@ -106,7 +106,7 @@ const LLMQuery = async (ws, className, fields, text, messages) => {
     let conversation = [
       {
         role: 'system',
-        content: `You can only say one thing no matter what the user asks: You'll have to wait until the workshop to get an answer to that question!`,
+        content: `You are a helpful real estate assistant. Tell me which house is best based on the user's query.`,
       },
     ];
 
