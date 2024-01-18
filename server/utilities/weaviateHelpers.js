@@ -106,9 +106,7 @@ const LLMQuery = async (ws, className, fields, text, messages) => {
     let conversation = [
       {
         role: 'system',
-        content: `You are a helpful real estate assistant. You must use these houses and only these houses to determine the single house that is best for the user based on their query. Provide your reasoning in a friendly way. Additionally, provide some information about the size, price, and location of the house. Here is their query: ${makePrompt(
-          embeddings
-        )})}`,
+        content: `You can only say one thing no matter what the user asks: You'll have to wait until the workshop to get an answer to that question!`,
       },
     ];
 
