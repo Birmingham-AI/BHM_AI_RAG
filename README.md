@@ -54,7 +54,19 @@ We'll be using the OpenAI API to create responses to our questions. To get an AP
 Clone the repository:
 
 ```bash
-git clone ...
+git clone https://github.com/robertjdominguez/BHM_AI_RAG.git
+```
+
+Change into the directory:
+
+```bash
+cd BHM_AI_RAG
+```
+
+Checkout the `waypoint-1` tag to get to the starting point of the workshop:
+
+```bash
+git checkout -f waypoint-1
 ```
 
 Create an `.env` file in the root of the project and add the following variables:
@@ -262,13 +274,6 @@ git checkout -f waypoint-3
 
 Now that we've got a working application, we can start having some fun with it. We'll add a few more prompts to our
 application to make it more robust and see how the AI responds to different questions.
-
-<details>
-<summary>Click to see the solution/steps 👀</summary>
-
-Information...
-
-</details>
 
 ## Wrapping up
 
